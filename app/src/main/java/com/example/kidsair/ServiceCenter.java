@@ -2,7 +2,9 @@ package com.example.kidsair;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.FrameLayout;
 
 public class ServiceCenter extends AppCompatActivity {
@@ -21,6 +23,11 @@ public class ServiceCenter extends AppCompatActivity {
         FrameLayout btn_policy4 = findViewById(R.id.policy_4);
         FrameLayout btn_policy5 = findViewById(R.id.policy_5);
 
-        btn_notice.setOnClickListener();
+        btn_notice.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent_notice = new Intent(ServiceCenter.this,Notice.class);
+                startActivity(intent_notice);
+            }
+        });
     }
 }
