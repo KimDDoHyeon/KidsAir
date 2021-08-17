@@ -16,12 +16,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/service_dashboard"
+            android:background="@drawable/notice_title"
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
+                android:background="@drawable/notice_title"
                 android:orientaion="horizontal"
                 android:paddingLeft="23dp">
 
@@ -59,6 +60,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
+                android:background="@drawable/notice_title"
                 android:paddingVertical="16dp"
                 android:paddingLeft="23dp"
                 android:paddingRight="24dp"
