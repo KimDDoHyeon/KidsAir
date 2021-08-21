@@ -7,12 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
 
-public class ServiceCenter extends AppCompatActivity {
+public class FragmentService extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_service_center);
+        setContentView(R.layout.activity_fragment_service);
 
         FrameLayout btn_notice = findViewById(R.id.notice);
         FrameLayout btn_faq = findViewById(R.id.faq);
@@ -25,7 +25,7 @@ public class ServiceCenter extends AppCompatActivity {
 
         btn_notice.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent_notice = new Intent(ServiceCenter.this,Notice.class);
+                Intent intent_notice = new Intent(FragmentService.this,Notice.class);
                 startActivity(intent_notice);
             }
         });
