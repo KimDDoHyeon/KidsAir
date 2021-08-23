@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_array">
+        <item>미세먼지</item>
+        <item>초미세먼지</item>
+        <item>이산화탄소</item>
+        <item>TVOC</item>
+    </string-array>
+</resources>
