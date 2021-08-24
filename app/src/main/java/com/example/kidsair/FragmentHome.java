@@ -16,22 +16,16 @@ import android.widget.TextView;
 
 public class FragmentHome extends Fragment {
 
-    private TextView dustLevel;
-
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View fragView = inflater.inflate(R.layout.fragment_home, container, false);
 
+        // 스피너
         Spinner spinner = (Spinner) fragView.findViewById(R.id.spinner);
-        dustLevel = (TextView) fragView.findViewById(R.id.dustLevel);
 
-//        spinner.setSelection(1);
-
-
-//        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-//                R.array.spinner_array, R.layout.spinner_item);
-//        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//        spinner.setAdapter(adapter);
-
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(fragView.getContext(),
+                R.array.spinner_array, R.layout.spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -47,6 +41,5 @@ public class FragmentHome extends Fragment {
 
         return fragView;
     }
-
 
 }
