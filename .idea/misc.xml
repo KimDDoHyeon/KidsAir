@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/ALS-CHAT/Desktop/KidsAirReposi/app/src/main/res/layout/activity_fragment_map.xml" value="0.2015625" />
+        <entry key="..\:/Users/ALS-CHAT/Desktop/KidsAirReposi/app/src/main/res/layout/activity_main.xml" value="0.2015625" />
+        <entry key="..\:/Users/ALS-CHAT/Desktop/KidsAirReposi/app/src/main/res/layout/activity_map.xml" value="0.22" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
-=======
-<<<<<<< Updated upstream
-=======
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
->>>>>>> Stashed changes
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
->>>>>>> parent of fe223c2 (.idea misc.xml 재수정)
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
