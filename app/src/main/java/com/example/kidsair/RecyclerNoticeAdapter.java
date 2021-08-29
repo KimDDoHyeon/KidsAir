@@ -102,6 +102,7 @@ public class RecyclerNoticeAdapter extends RecyclerView.Adapter<RecyclerNoticeAd
                 @Override
                 public void onAnimationUpdate(ValueAnimator animation) {
                     int value = (int) animation.getAnimatedValue();
+                    textView2.getLayoutParams().height = value;
                     textView2.requestLayout();
                     textView2.setVisibility(isExpanded ? View.VISIBLE : View.GONE);
                 }
