@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -16,16 +17,20 @@ import android.widget.TextView;
 
 public class FragmentHome extends Fragment {
 
+    ViewPagerAdapter pagerAdapter;
+    ViewPager2 pager2;
+    int list[];
+
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View fragView = inflater.inflate(R.layout.fragment_home, container, false);
 
         // 스피너
         Spinner spinner = (Spinner) fragView.findViewById(R.id.spinner);
 
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(fragView.getContext(),
+        ArrayAdapter<CharSequence> spinnerAdapter = ArrayAdapter.createFromResource(fragView.getContext(),
                 R.array.spinner_array, R.layout.spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
+        spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(spinnerAdapter);
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -38,6 +43,9 @@ public class FragmentHome extends Fragment {
 
             }
         });
+
+        // 뷰페이저
+        pager2 = fragView.findViewById(R.id.view_pager2);
 
         return fragView;
     }

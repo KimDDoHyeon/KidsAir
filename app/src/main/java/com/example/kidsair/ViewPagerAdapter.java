@@ -24,7 +24,7 @@ public class ViewPagerAdapter extends RecyclerView.Adapter<ViewPagerAdapter.MyVi
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-
+        holder.view.setBackgroundColor(list[position]);
     }
 
     @Override
