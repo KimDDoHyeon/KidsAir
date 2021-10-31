@@ -6,16 +6,154 @@
     android:layout_height="match_parent"
     android:background="@color/background">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="고객센터"
-        android:textColor="@color/black"
-        android:textSize="30dp"
+    <ImageView
+        android:id="@+id/cloud2"
+        android:layout_width="428dp"
+        android:layout_height="288.33dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.953"
+        app:srcCompat="@drawable/cloud" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="320dp"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.555">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape1"
+            android:padding="10dp"
+            android:text="          약관 및 정책"
+            android:textColor="#C0C0C0"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape3"
+            android:text="          이용약관"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:background="@drawable/shape3"
+            android:text="          위치기반 서비스 이용약관"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape3"
+            android:text="          개인정보처리방관침"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="left"
+            android:background="@drawable/shape3"
+            android:textStyle="bold"
+            android:text="           운영정책  " />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape2"
+            android:text="          오픈소스 라이센스"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:elevation="10dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:contentInsetStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="고객센터"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.136">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape1"
+            android:text="          공지사항 "
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape2"
+            android:text="          FAQ"
+            android:textColor="#000000" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
