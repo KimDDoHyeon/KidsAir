@@ -3,6 +3,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FragmentMap">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="410dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:elevation="10dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="60dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="23.33dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="250dp"
+
+            android:src="@drawable/search" />
+
+    </androidx.appcompat.widget.Toolbar>
 
     <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
